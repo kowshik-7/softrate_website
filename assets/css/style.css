@@ -50,25 +50,6 @@
     }
 
 
-
-
-    /* utilites */
-    /* .colorAnimation{
-        background: linear-gradient(-100deg, var(--blue), var(--pink1), var(--pink2));
-        background-size: 400% 400%;
-        animation: gradient 5s ease infinite;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .colorAnimationStar{
-        background: linear-gradient(-100deg, var(--blue), var(--pink1), var(--pink2));
-        background-size: 400% 400%;
-        animation: gradient 5s ease infinite;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    } */
-
     /* extend/*/
     .extend {
         width: 100%;
@@ -82,12 +63,7 @@
     .sec1 {
         height: 860px;
         width: 100%;
-        /* background-color: #F5F5F5; */
         background-image: url("../img/svg/homeBg.svg");
-        /* background-image: url(./img/bgimg5.png);
-        background-size: 180%; */
-        /* border-bottom-left-radius: 80px;
-        border-bottom-right-radius: 80px; */
     }
 
     .star {
@@ -192,15 +168,6 @@
         height: 80px;
         transform: translate(450px, 0px);
     }
-
-
-
-
-    /* .logoIcon img:nth-child(1){
-        transform: translate(-500,500);
-    } */
-
-
 
 
     .bannerContent {
@@ -638,8 +605,8 @@
         
         
         lottie-player .desgImg {
-            height: 300px;
-            width: 500px;
+            height: 100px;
+            width: 100px;
         }
     
         lottie-player .techImg{
@@ -2257,4 +2224,86 @@
         border-radius: 20px;
         width: 90%;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+
+
+
+
+
+
+
+    /* ==============MOBILE COMPONENT=============== */
+
+
+    .sec2Mob{
+        display: none;
+    }
+
+    @media  screen and (max-width: 768px) {
+        .extend{
+            display: none;
+        }
+        .sec2Mob{
+            display: block;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        } 
+
+        lottie-player{
+            height: 200px;
+        } 
+
+        .secMob{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .secHeadMob{
+            display: flex;
+            height: 100%;
+            width: 100%;
+            align-self: center;
+            gap: 10px;
+            margin-left: 50px;
+            /* justify-content: center; */
+        }
+        .secHeadMob i{
+            font-size: 36px;
+        }
+
+        .secHeadMob h1{
+            font-size: 36px;
+            letter-spacing: 2px;
+            color: var(--black2);
+        }
+
+        .secImgMob{
+            height: 100%;
+            width: 100%;
+            /* padding: 10px 0px; */
+        }
+
+        .secCntMob{
+            margin-left: 70px;
+        }
+        .secCntMob ul {
+            line-height: 2;
+        }
+
+        .secCntMob ul li{
+            color: var(--black2);
+        }
+
+        .techMobImg{
+            margin-top: -40px;
+            margin-bottom: -40px;
+        }
+
     }
