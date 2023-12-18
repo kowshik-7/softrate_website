@@ -1,16 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Softrate</title>
+    <!-- <link rel="shortcut icon" href="../assets/img/icon/logo.ico" type="image/x-icon"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/icon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/img/icon/site.webmanifest">
+    <link rel="mask-icon" href="../assets/img/icon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-player/2.0.2/lottie-player.js" integrity="sha512-NcJNVDzfhHalE0Dj3s8ub4hW0QYw1hfk05I53N3MTXOYDDGt0wpXmAPve+GhmmdDxik8pTUONQjeNKDO/p7rhQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <div class="main">
+        <!-- navBar -->
+        <!--=============== HEADER ===============-->
+        <div id="header"></div>
+        
+        <!--=============== MAIN JS ===============-->
+        
+        <div class="cursor" id="cursor"></div>
         <!-- sectoion 1 -->
-        <div class="section1">
-            <h1>hello softrate</h1>
+        
+        <div class="sec1">
+            <div class="star">
+                <div class="starIcon">
+                    <i id="star1" class="fa-solid fa-star " style="color: #ae0288;"></i>
+                    <i id="star2" class="fa-solid fa-star " style="color: #ae0288;"></i>
+                    <i id="star3" class="fa-solid fa-star " style="color: #ae0288;"></i>
+                    <i id="star4" class="fa-solid fa-star " style="color: #ae0288;"></i>
+                </div>
+            </div>
+            <div class="heroLogo">
+                <div class="logoIcon">
+                    <img class="facebook" src="./assets/img/svg/facebook.svg" alt="facebook">
+                    <img class="googleAds" src="./assets/img/svg/and.svg" alt="">
+                    <img class="analytics" src="./assets/img/svg/signal.svg" alt="">
+                    <img class="meta" src="./assets/img/svg/meta.svg" alt="">
+                    <img class="ai" src="./assets/img/index/AI.png" alt="">
+                    <img class="html" src="./assets/img/index/html.png" alt="">
+                    <img class="invoices" src="./assets/img/index/softrateinvoice.webp" alt="">
+                    <img class="desk" src="./assets/img/index/desklogo.webp" alt="">
+                    
+                </div>
+            </div>
+            <div class="bannerContent">
+                <div class="bannerTxt">
+                    <div class="textHead">
+                        <h1 class="cusorScale small">MAKING IDEAS HAPPEN</h1>
+                        <p class="cusorScale wordScale">Softrate Global</p>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <div class="workFlow">
+           
+            <div class="workFlowContent">
+                <div class="workFlowHead">
+                    <p>Your Easy Path to Digital Success with <span class="colorAnimation">Softrate</span></p>
+                    <!-- <div class="workFlowLine">
+
+                    </div> -->
+                </div>
+                <div class="workFlowCircle">
+                    <!-- circle 1 -->
+                    <div data-aos="fade-up" data-aos-delay="50" class="circle1">
+                        <div class="circleImg">
+                            <!-- <img class="circleBgimg" src="./assets/icon/Frame 1circle.png" alt="icon1"> -->
+                            <i id="star" class="fa-solid fa-star " style="color: #ae0288;"></i>
+                        </div>
+                        <div class="circleContent">
+                            <h1>Discuss Your Vision</h1>
+                            <p>We start by understanding your goals and requirements for a successful digital
+                                transformation.</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="200" class="circle2">
+                        <div class="circleImg">
+                            <!-- <img class="circleBgimg" src="./assets/icon/Frame 1circle.png" alt="icon1"> -->
+                            <i id="star" class="fa-solid fa-star " style="color: #ae0288;"></i>
+                        </div>
+                        <div class="circleContent">
+                            <h1>Tailored  Strategy</h1>
+                            <p>Our experts craft a personalized strategy encompassing UI/UX, mobile apps, web solutions,
+                                branding, and more.</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="350" class="circle3">
+                        <div class="circleImg">
+                            <!-- <img class="circleBgimg" src="./assets/icon/Frame 1circle.png" alt="icon1"> -->
+                            <i id="star" class="fa-solid fa-star " style="color: #ae0288;"></i>
+                        </div>
+                        <div class="circleContent">
+                            <h1>Creative Execution</h1>
+                            <p>We bring your vision to life with stunning designs and functional development that exceed
+                                expectations.</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="400" class="circle4">
+                        <div class="circleImg">
+                            <!-- <img class="circleBgimg" src="./assets/icon/Frame 1circle.png" alt="icon1"> -->
+                            <i id="star" class="fa-solid fa-star " style="color: #ae0288;"></i>
+                        </div>
+                        <div class="circleContent">
+                            <h1>Seamless   Delivery</h1>
+                            <p>Our client-centric approach ensures flawless delivery, in line with your unique needs and
+                                satisfaction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="extend">
+
+            <div class="section2">
+                <div data-aos="fade-right" class="designLeftHead">
+                    <i id="star" class="fa-solid fa-star " style="color: #ae0288;"></i>
+                    <h1 class="colorAnimation">Design</h1>
+                </div>
+                <div class="section2Content">
+                    <div class="section2Left">
+                        <div class="designLeft">
+                            <div class="designLeftContent">
+                                <a data-aos="fade-right" data-aos-delay="150" class="underline" href="#">UI / UX Design</a>
+                                <a data-aos="fade-right" data-aos-delay="350" >Consultancy</a>
+                                <a data-aos="fade-right" data-aos-delay="550" href="">Graphic Design</a>
+                                <a data-aos="fade-right" data-aos-delay="850" href="">Animation and Illustration</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section2Right">
+                        <div class="designRight">
+                            <div data-aos="fade-right" class="designRightImg">
+                                <!-- <img src="./assets/svg/Animation - 1702719670474.json" alt=""> -->
+                                <!-- <lottie animation-data></lottie> -->
+                                <lottie-player class="desgImg" src="./assets/svg/design.json" background="transparent" speed="1" direction="1" mode="normal" loop  autoplay></lottie-player>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <!-- <div class="section2">
+                <div class="designLeftHead">
+                    <h1 class="colorAnimation">Technology</h1>
+                </div>
+                <div class="section2Content">
+                    <div class="section2Left">
+                        <div class="designLeft">
+                            <div class="designLeftContent">
+                                <a id="webTxt" class="underline" href="#">Web Design / Develeopment</a>
+                                <a id="mobileTxt" href="#">Mobile App Development</a>
+                                <a id="softwareTxt" href="#">Software Development</a>
+                                <a id="gameTxt" href="#">Games Development</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section2Right">
+                        <div class="technologyRightImg">
+                            <img src="./assets/img/index/bg.webp" alt="background image" id="bgImg">
+                            <img src="./assets/img/index/person.webp" alt="person" id="person">
+                            <img src="./assets/img/index/webdesign.webp" alt="web design" class="webDesign" id="webDesign">
+                            <img src="./assets/img/index/mobileapp.webp" alt="mobile app" id="mobileApp">
+                            <img src="./assets/img/index/gamedevelopment.webp" alt="game development" id="gameDevelopment">
+                            <img src="./assets/img/index/softwaredevelopment.webp" alt="softwaredevelopment"
+                                id="softwaredevelopment">
+                        </div>
+                    </div>  
+                </div>
+            </div> -->
+            
+            <div class="sec2">
+                <div data-aos="fade-right" class="technologyLeftHead">
+                    <i id="star" class="fa-solid fa-star " style="color: #ae0288;"></i>
+                    <h1 class="colorAnimation">Technology</h1>
+                </div>
+                <div class="technologyPage">
+                    <div class="technologyLeft">
+                        <div class="technologyLeftContent">
+                            <a data-aos="fade-right" data-aos-delay="150" id="webTxt" href="#">Web Design / Develeopment</a>
+                            <a data-aos="fade-right" data-aos-delay="350" id="mobileTxt" href="#">Mobile App Development</a>
+                            <a data-aos="fade-right" data-aos-delay="550" id="softwareTxt" href="#">Software Development</a>
+                            <a data-aos="fade-right" data-aos-delay="850" id="gameTxt" href="#">Games Development</a>
+                        </div>
+                    </div>
+                    <div class="technologyRight">
+                        <div class="technologyRightImg">
+                            <!-- <img src="./assets/img/index/technology.png" alt=""> -->
+                            <lottie-player class="techImg" src="./assets/svg/animation blue.json" background="transparent" speed="1" direction="1" mode="normal" loop  autoplay></lottie-player>
+                            <!-- <img src="./assets/img/index/bg.webp" alt="background image" id="bgImg">
+                            <img src="./assets/img/index/person.webp" alt="person" id="person">
+                            <img src="./assets/img/index/webdesign.webp" alt="web design" class="webDesign" id="webDesign">
+                            <img src="./assets/img/index/mobileapp.webp" alt="mobile app" id="mobileApp">
+                            <img src="./assets/img/index/gamedevelopment.webp" alt="game development" id="gameDevelopment">
+                            <img src="./assets/img/index/softwaredevelopment.webp" alt="softwaredevelopment"
+                                id="softwaredevelopment"> -->
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+             
+            <div class="sec3">
+                <div data-aos="fade-right" class="businessLeftHead">
+                    <i id="star" class="fa-solid fa-star " style="color: #ae0288;"></i>
+                    <h1 class="colorAnimation">Business</h1>
+                </div>
+                <div class="businessPage">
+                    <div class="businessLeft">
+                        <div class="businessLeftContent">
+                            <a data-aos="fade-right" data-aos-delay="150" id="branding" class="branding" href="#">Branding</a>
+                            <a data-aos="fade-right" data-aos-delay="350" id="businessConsultancy" href="#">Business Consultancy</a>
+                            <a data-aos="fade-right" data-aos-delay="550" id="digitalMarketing" href="#">Digital Marketing</a>
+                            <a data-aos="fade-right" data-aos-delay="850" id="strategyIdea" href="#">Strategy Idea</a>
+                            <a data-aos="fade-right" data-aos-delay="1150" id="seo" href="#">S E O</a>
+                        </div>
+                    </div>
+                    <div class="businessRight">
+                        <div data-aos="fade-right" class="businessRightImg">
+                            <lottie-player class="bussImg" src="./assets/svg/bussiness.json" background="transparent" speed="1" direction="1" mode="normal" loop  autoplay></lottie-player>
+                            
+                            <!-- <img id="businessBg" src="./assets/img/index/bussiness_bg_3-1.webp" alt="bg"> -->
+                            <!-- <img id="businessBg" src="./assets/img/index/strategyThinking.webp" alt="bg4"> -->
+                            <!-- <img id="businessBg1" src="./assets/img/index/branding.webp" alt="bg1"> -->
+                            <!-- <img id="businessBg2" src="./assets/img/index/businessConsultancy.webp" alt="bg2"> -->
+                            <!-- <img id="businessBg3" src="./assets/img/index/digitalMarketing.webp" alt="bg3"> -->
+                            <!-- <img id="businessBg4" src="./assets/img/index/strategyThinking.webp" alt="bg4"> -->
+                            <!-- <img id="businessBg5" src="./assets/img/index/SEO.webp" alt="bg5"> -->
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+
+            <!-- <div class="section2">
+                <div class="designLeftHead">
+                    <h1 class="colorAnimation">Bussiness</h1>
+                </div>
+                <div class="section2Content">
+                    <div class="section2Left">
+                        <div class="designLeft">
+                            <div class="designLeftContent">
+                                <a id="branding" class="branding" href="#">Branding</a>
+                                <a id="businessConsultancy" href="#">Business Consultancy</a>
+                                <a id="digitalMarketing" href="#">Digital Marketing</a>
+                                <a id="strategyIdea" href="#">Strategy Idea</a>
+                                <a id="seo" href="#">Seo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section2Right">
+                        <div class="businessRightImg">
+                            <img id="businessBg" src="./assets/img/index/bussiness_bg_3-1.webp" alt="bg">
+                            <img id="businessBg1" src="./assets/img/index/branding.webp" alt="bg1">
+                            <img id="businessBg2" src="./assets/img/index/businessConsultancy.webp" alt="bg2">
+                            <img id="businessBg3" src="./assets/img/index/digitalMarketing.webp" alt="bg3">
+                            <img id="businessBg4" src="./assets/img/index/strategyThinking.webp" alt="bg4">
+                            <img id="businessBg5" src="./assets/img/index/SEO.webp" alt="bg5">
+                        </div>
+                    </div>  
+                </div>
+            </div>  -->
+            
+
+
+        </div>
+
+        <!-- Map -->
+        <div class="homeMap">
+            <div class="mapContent">
+                <div class="mapHead">
+                    <!-- <div class="line"></div> -->
+                    <h1><span>100</span>+ Projects Delivered</h1>
+                    <p>and counting more...</p>
+                </div>
+                <div class="map">
+                    <img src="./assets/img/index/homemap.webp" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="clients">
+            <div class="innerClient">
+                <div class="clientHead">
+                    <h1>More quotes from some of our favorite customers</h1>
+                </div>
+                <div class="flexItem">
+
+                    <div class="clientLeft">
+                        <div data-aos="fade-up" class="leftOne">
+                            <div class="testHead">
+                                <div class="testLogo">
+                                    <img src="./assets/img/client-logo/KIYO LOGO PNG BLACK - for website.webp" alt="">
+                                </div>
+                                <div class="testName">
+                                    <h1>Kiyo Architects & Interiors</h1>
+                                </div>
+                            </div>
+                            <div class="testContent">
+                                <p>
+                                    Softrate Technologies has been an absolute game-changer for Kiyo Architects & Interiors. As the Chief Architect, I initially engaged their services for digital marketing and website development. Their performance has exceeded our expectations, and their expertise in both local and international SEO has significantly elevated our digital presence, resulting in a substantial increase in leads and conversions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clientRight">
+                        <div data-aos="fade-up" class="rightOne">
+                            <div class="testHead">
+                                <div class="testLogo">
+                                    <img src="./assets/img/client-logo/MRV electronics .webp" alt="">
+                                </div>
+                                <div class="testName">
+                                    <h1>MRV Electronics Pvt Ltd.</h1>
+                                </div>
+                            </div>
+                            <div class="testContent">
+                                <p>As the Founder and CEO of MRV Electronics Trust, I reached out to Softrate Technologies for e-commerce site development and digital marketing. Their service was top-notch and completely transformed our business into a digital success story. Softrate Technologies is the best choice for taking your business to the next level</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div data-aos="fade-up" class="RightTwo">
+                            <div class="testHead">
+                                <div class="testLogo">
+                                    <img src="./assets/img/client-logo/Habibi grill logo - transparent.webp" alt="">
+                                </div>
+                                <div class="testName">
+                                    <h1>Habibi grill</h1>
+                                </div>
+                            </div>
+                            <div class="testContent">
+                                <p>Softrate Technologies revolutionized our restaurant's digital presence. As the founder of Habibi grill, I sought their website development expertise, and the results were outstanding. Their Digital marketing skills have expanded our reach, and pulled new potential customers. Their service is simply the best. Thank you, Softrate!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- mobile clinet -->
+        <div class="mobClient">
+            <div class="mobHead">
+                <div class="clientHead">
+                    <h1>More quotes from some of our favorite customers</h1>
+                </div>
+            </div>
+            <div class="mobQuotes">
+                <div class="mobQuotes1">
+                    <div class="testHead">
+                        <div class="testLogo">
+                            <img src="./assets/img/index/KIYO LOGO PNG BLACK - for website.webp" alt="">
+                        </div>
+                        <div class="testName">
+                            <h1>Kiyo Architects & Interiors</h1>
+                        </div>
+                    </div>
+                    <div class="testContent">
+                        <p>
+                            Softrate Technologies has been an absolute game-changer for Kiyo Architects & Interiors. As the Chief Architect, I initially engaged their services for digital marketing and website development. Their performance has exceeded our expectations, and their expertise in both local and international SEO has significantly elevated our digital presence, resulting in a substantial increase in leads and conversions.</p>
+                    </div>
+                </div>
+                <div class="mobQuotes2">
+                    <div class="testHead">
+                        <div class="testLogo">
+                            <img src="./assets/img/index/MRV electronics .webp" alt="">
+                        </div>
+                        <div class="testName">
+                            <h1>MRV Electronics Pvt Ltd.</h1>
+                        </div>
+                    </div>
+                    <div class="testContent">
+                        <p>As the Founder and CEO of MRV Electronics Trust, I reached out to Softrate Technologies for e-commerce site development and digital marketing. Their service was top-notch and completely transformed our business into a digital success story. Softrate Technologies is the best choice for taking your business to the next level</p>
+                    </div>
+                </div>
+                <div class="mobQuotes3">
+                    <div class="testHead">
+                        <div class="testLogo">
+                            <img src="./assets/img/index/Habibi grill logo - transparent.webp" alt="">
+                        </div>
+                        <div class="testName">
+                            <h1>Habibi grill</h1>
+                        </div>
+                    </div>
+                    <div class="testContent">
+                        <p>Softrate Technologies revolutionized our restaurant's digital presence. As the founder of Habibi grill, I sought their website development expertise, and the results were outstanding. Their Digital marketing skills have expanded our reach, and pulled new potential customers. Their service is simply the best. Thank you, Softrate!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- section 4 -->
+        <div class="sec4">
+            <div class="sec4Content">
+                <div class="sec4Box">
+                    <h1>Let's discuss your Digital Transformation
+                        <br>
+                        <p>Your gateway to cutting edge AI powered digital transformation.</p>
+                    </h1>
+                    <a href="./pages/contact.html">Get Started</a>    
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="elfsight-app-1fa53653-ceaa-44fc-8b7d-f98a1ddad820"></div> -->
+
+        <div id="footer">
+
+        </div>
+
+
     </div>
+
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <!-- <script src="./assets/js/header.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script async>
+        $(function() {
+            $('#header').load("../assets/header/header.html", function() {
+                $.getScript("../assets/js/header.js", function() {
+                // Callback function after the script has loaded
+                });
+            });
+            $(function(){
+                $('#footer').load("../assets/footer/footer.html")
+            });
+        });
+
+    </script> 
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <script src="./assets/js/index.js"></script>
 </body>
+
 </html>
